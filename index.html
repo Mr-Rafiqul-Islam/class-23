@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Marksheet</title>
+    <style>
+        .box{
+            width: 1320px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .box h1{
+            font-size: 64px;
+            font-weight: bold;
+            text-align: center;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+     <div class="box">
+        <h1>Please Check Your Console</h1>
+     </div>
+
+    <script>
+    //    Grade Marksheet 
+    { 
+        var obtainMark = 66;
+
+        let firstClass = 'Congratulation A+';
+        let secondClass = 'A Grade';
+        let thirdClass = 'Grade A-';
+        let passed = 'Luck by Chance You are promoted';
+        let failed = 'F, Sorry You are not promoted.!';
+        
+
+        // conditions 
+
+        if ( obtainMark >= 80 && obtainMark <= 100) {
+            console.log(firstClass);
+        } else if( obtainMark >= 70 && obtainMark <= 79) {
+            console.log(secondClass);
+        } else if( obtainMark >= 60 && obtainMark <= 69){
+            console.log(thirdClass);
+        } else if( obtainMark >= 50 && obtainMark <= 59){
+            console.log('B Grade');
+        } else if( obtainMark >= 40 && obtainMark <= 49){
+            console.log('C Grade');
+        } else if( obtainMark >= 33 && obtainMark <= 39){
+            console.log(passed);
+        } else if( obtainMark >= 0 && obtainMark <= 32){
+            console.log(failed);
+        } else{
+            console.log('Out of range, please check your answer paper.!');
+        }
+        
+    }
+
+    </script>
+</body>
+</html>
